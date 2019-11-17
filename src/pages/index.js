@@ -4,17 +4,15 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import "typeface-noto-sans";
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <h1>Home</h1>
+    <div style={{ width: `90%`, margin: `1.45rem auto`, height: 500, }}>
+    	Welcome to the homepage of software engineer and composer Joe Steccato.
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
 
