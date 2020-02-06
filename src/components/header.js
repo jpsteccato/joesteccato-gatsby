@@ -25,13 +25,13 @@ const Header = ({ siteTitle }) => (
         <Link
           to="/"
           style={{
-            color: `#0B67FEFF`,
+            // color: `#0B67FEFF`,
             textDecoration: `none`,
             width: `auto`,
             margin: `auto`,
           }}
         >
-          {siteTitle}
+          Joe Steccato
         </Link>
       </h1>
     </div>

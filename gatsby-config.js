@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Joe Steccato`,
-    description: `Joe Steccato is a software developer and musician based in New York City.`,
+    title: `Joe Steccato | Software Engineer | Creative Coder | Musician | NYC`,
+    description: `Joe Steccato is a software engineer, creative coder, and musician based in New York.  Joe helps artist realize their engineering requirements and possibilites in media-based works.`,
     author: `Joe Steccato`,
   },
   plugins: [
