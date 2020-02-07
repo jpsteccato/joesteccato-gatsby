@@ -6,7 +6,8 @@ const Header = ({ siteTitle }) => (
   <header
     style={{
       background: `#000`,
-      marginBottom: `1.45rem`,
+      marginTop: `1.45rem`,
+      marginBottom: `2.45rem`,
     }}
   >
     <div
@@ -19,16 +20,19 @@ const Header = ({ siteTitle }) => (
       <h1 style={{ 
             margin: `auto`,
             width: `auto`,
-            textAlign: `center`
+            textAlign: `center`,
+            marginBottom: `2.45rem`,
+
           }}
       >
         <Link
           to="/"
           style={{
-            // color: `#0B67FEFF`,
+            color: `#0B67FEFF`,
             textDecoration: `none`,
             width: `auto`,
             margin: `auto`,
+            letterSpacing: `0.2rem`
           }}
         >
           Joe Steccato

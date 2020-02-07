@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
 @font-face {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: normal;
   
@@ -9,11 +8,10 @@
 */}
 
 html {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Rubik', sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   background: #000;
-  color: #2FDE04FF !important;
 }
 body {
   margin: 0;
@@ -54,7 +52,8 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
-  color: #2FDE04FF !important;
+  color: #a0f;
+  text-decoration: none;
 }
 a:active,
 a:hover {
@@ -213,7 +212,7 @@ html {
 }
 body {
   color: #2FDE04FF !important;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -243,7 +242,7 @@ h1 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;

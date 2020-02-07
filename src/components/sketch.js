@@ -4,15 +4,10 @@ import p5 from 'p5/lib/p5.min';
 
 const SketchWrapper = styled.div`
   & > canvas {
-    position: absolute;
     display: block;
     margin: 0 auto;
-    padding: 0 auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     z-index: -2;
+    border: 1px #fff solid;
   }
 `;
 

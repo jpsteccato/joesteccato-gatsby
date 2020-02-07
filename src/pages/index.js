@@ -4,19 +4,23 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
-import "typeface-noto-sans";
+
+import Sketch from '../components/sketch';
+import sketch from '../scripts/phi';
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <h1 style={{display:`none`}}>Home</h1>
     <div style={{ width: `90%`, margin: `auto auto`, height: 500, verticalAlign: `middle`}}>
-    	<span 
+    	<Sketch sketch={sketch} /> 
+
+
+        <div 
     		style={{ 
     			margin: `auto`, 
     			verticalAlign: `middle`}}>
-                    Welcome
-                </span>
+                </div>
     </div>
   </Layout>
 )
