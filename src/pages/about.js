@@ -8,14 +8,15 @@ import "typeface-noto-sans";
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1 style={{display:`none`}}>Home</h1>
+    <SEO title="About" />
+    <h1 style={{display:`none`}}>About Joe</h1>
     <div style={{ width: `90%`, margin: `auto auto`, height: 500, verticalAlign: `middle`}}>
     	<span 
     		style={{ 
     			margin: `auto`, 
-    			verticalAlign: `middle`}}>
-                    Welcome
+    			verticalAlign: `middle`}}>Joe Steccato is a software engineer, creative coder, and musician based in New York.  
+                Joe helps digital artists realize the engineering requirements and possibilites of their media-based works.
+                He is also a music composer and producer.  
                 </span>
     </div>
   </Layout>

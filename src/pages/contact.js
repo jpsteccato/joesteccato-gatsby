@@ -8,14 +8,13 @@ import "typeface-noto-sans";
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1 style={{display:`none`}}>Home</h1>
+    <SEO title="Contact" />
+    <h1 style={{display:`none`}}>Contact</h1>
     <div style={{ width: `90%`, margin: `auto auto`, height: 500, verticalAlign: `middle`}}>
     	<span 
     		style={{ 
     			margin: `auto`, 
-    			verticalAlign: `middle`}}>
-                    Welcome
+    			verticalAlign: `middle`}}>joe@joesteccato.com  
                 </span>
     </div>
   </Layout>

@@ -8,14 +8,14 @@ import "typeface-noto-sans";
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1 style={{display:`none`}}>Home</h1>
+    <SEO title="Projects" />
+    <h1 style={{display:`none`}}>Projects</h1>
     <div style={{ width: `90%`, margin: `auto auto`, height: 500, verticalAlign: `middle`}}>
     	<span 
     		style={{ 
     			margin: `auto`, 
     			verticalAlign: `middle`}}>
-                    Welcome
+                    Projects 
                 </span>
     </div>
   </Layout>

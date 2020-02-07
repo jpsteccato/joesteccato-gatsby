@@ -40,20 +40,19 @@ const Layout = ({ children }) => {
       >
 
         <main>{children}</main>
-
-        <footer  
-          style={{
-            position: `absolute`,
-            bottom: `0`,
-            height: `2.5rem`,
-            width: `50%`,
-            textAlign: `center`
-           }}
-        >
-        © {new Date().getFullYear()} Joe Steccato
-        </footer>
-
       </div>
+      <footer  
+        style={{
+          position: `absolute`,
+          bottom: `0`,
+          height: `2.5rem`,
+          textAlign: `center`,
+          width: `100%`,
+          fontSize: `0.8rem`
+         }}
+      >
+      © {new Date().getFullYear()} Joe Steccato
+      </footer>
     </>
   )
 }
