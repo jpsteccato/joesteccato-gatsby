@@ -12,11 +12,13 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   background: #000;
+  overflow-y: hidden !important;
 }
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior-y: none;
 }
 article,
 aside,
@@ -52,12 +54,14 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
-  color: #a0f;
+  color: #aaf;
   text-decoration: none;
 }
 a:active,
 a:hover {
   outline-width: 0;
+  text-decoration: underline;
+  color: rgb(11, 103, 254);
 }
 abbr[title] {
   border-bottom: none;

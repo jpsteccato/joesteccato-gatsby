@@ -11,11 +11,11 @@ const IndexPage = () => (
     <SEO title="Contact" />
     <h1 style={{display:`none`}}>Contact</h1>
     <div style={{ width: `90%`, margin: `auto auto`, height: 500, verticalAlign: `middle`}}>
-    	<span 
+    	<div
     		style={{ 
     			margin: `auto`, 
     			verticalAlign: `middle`}}>joe@joesteccato.com  
-                </span>
+                </div>
     </div>
   </Layout>
 )

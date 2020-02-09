@@ -7,7 +7,7 @@ const Header = ({ siteTitle }) => (
     style={{
       background: `#000`,
       marginTop: `1.45rem`,
-      marginBottom: `2.45rem`,
+      marginBottom: `4.45rem`,
     }}
   >
     <div
@@ -21,8 +21,7 @@ const Header = ({ siteTitle }) => (
             margin: `auto`,
             width: `auto`,
             textAlign: `center`,
-            marginBottom: `2.45rem`,
-
+            marginBottom: `.45rem`,
           }}
       >
         <Link
@@ -32,7 +31,8 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
             width: `auto`,
             margin: `auto`,
-            letterSpacing: `0.2rem`
+            letterSpacing: `0.3rem`,
+            fontWeight: `600`
           }}
         >
           Joe Steccato

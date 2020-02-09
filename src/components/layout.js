@@ -48,7 +48,7 @@ const Layout = ({ children }) => {
           height: `2.5rem`,
           textAlign: `center`,
           width: `100%`,
-          fontSize: `0.8rem`
+          fontSize: `0.6rem`
          }}
       >
       © {new Date().getFullYear()} Joe Steccato
