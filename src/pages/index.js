@@ -10,8 +10,9 @@ import sketch from '../scripts/pen';
 
 const DrawBox = () => {
   return (
-        <div  style={{ width: `100%`, height: `420px`}}>
+        <div  style={{ width: `100%`, height: `500px`}}>
           <Sketch sketch={sketch}/>
+          <div style={{textAlign: `center`}}>[Click and Drag Inside ^]</div>
         </div>
     )
 }
@@ -24,17 +25,17 @@ const IndexPage = () => (
     <div style={{ width: `90%`, margin: `auto auto`, verticalAlign: `middle`}}>
 
       <DrawBox/>  
-
-       <div 
-    		style={{ 
-    			margin: `auto`, 
-    			verticalAlign: `middle`,
-          textAlign: `center`,
-          marginTop: `0.3rem`,
-          fontSize: `0.4`
-        }}>
-          [Click inside ^]
+      <div style={{marginTop: `3.0rem`}}>
+         <h2 style={{textAlign: `center`}}>About Joe</h2>
+         <div style={{ width: `90%`, margin: `auto auto`, height: 500, verticalAlign: `middle`}}>
+           <div 
+             style={{ 
+               margin: `auto`, 
+               verticalAlign: `middle`}}>
+                    Joe Steccato is a software engineer, creative coder, and musician based in New York.  
+             </div>
          </div>
+        </div>
     </div>
   </Layout>
 )

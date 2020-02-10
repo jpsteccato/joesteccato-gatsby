@@ -7,7 +7,7 @@ const Header = ({ siteTitle }) => (
     style={{
       background: `#000`,
       marginTop: `1.45rem`,
-      marginBottom: `4.45rem`,
+      marginBottom: `1.45rem`,
     }}
   >
     <div
@@ -21,7 +21,7 @@ const Header = ({ siteTitle }) => (
             margin: `auto`,
             width: `auto`,
             textAlign: `center`,
-            marginBottom: `.45rem`,
+            marginBottom: `0.45rem`,
           }}
       >
         <Link
@@ -39,29 +39,7 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
     </div>
-    <div
-      style={{
-        margin: `auto auto`,
-        width: `auto`,
-        display: `flex`,
-        justifyContent: `space-around`,
-        flexDirection: `row`,
-        color: `#f00`
-      }}
-    >
-      <Link to="/">
-        Home
-      </Link>
-      <Link to="/about">
-        About
-      </Link>
-      <Link to="/projects">
-        Projects
-      </Link>
-      <Link to="/contact">
-        Contact
-      </Link>
-    </div>
+
   </header>
 )
 

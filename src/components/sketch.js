@@ -12,7 +12,7 @@ const SketchWrapper = styled.div`
     height: 100%;
   }
 `;
-console.log(styled.div)
+
 class Sketch extends Component {
   constructor(props) {
     super(props);

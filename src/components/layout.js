@@ -12,6 +12,11 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 
+import Github from "../svgs/github"
+import Email from "../svgs/email"
+import LinkedIn from "../svgs/linkedin"
+import BitBucket from "../svgs/bitbucket"
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -39,19 +44,26 @@ const Layout = ({ children }) => {
         }}
       >
 
-        <main>{children}</main>
+      <main>{children}</main>
       </div>
       <footer  
         style={{
           position: `absolute`,
           bottom: `0`,
-          height: `2.5rem`,
+          height: `4.5rem`,
           textAlign: `center`,
           width: `100%`,
           fontSize: `0.6rem`
          }}
       >
-      © {new Date().getFullYear()} Joe Steccato
+        <div style={{width: `300px`, fill: `#2FDE04FF`,display: `flex`,flexDirection: `row`, justifyContent: `space-around`, margin: `0 auto`}}>
+          <BitBucket />
+          <Github />
+          <LinkedIn />
+          <Email />
+        </div>
+      <div style={{opacity: `0.7`}}>© {new Date().getFullYear()} Joe Steccato</div>
+      
       </footer>
     </>
   )
