@@ -25,7 +25,7 @@ const IndexPage = () => (
     <div style={{ width: `90%`, margin: `auto auto`, verticalAlign: `middle`}}>
 
       <DrawBox/>  
-      <div style={{marginTop: `3.0rem`}}>
+      <div style={{display: `none`, marginTop: `3.0rem`}}>
          <h2 style={{textAlign: `center`}}>About Joe</h2>
          <div style={{ width: `90%`, margin: `auto auto`, height: 500, verticalAlign: `middle`}}>
            <div 
