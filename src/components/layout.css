@@ -637,10 +637,15 @@ a svg{
   opacity: 0.6;
   fill: #2FDE04FF;
   padding: 4px 4px;
+  transition: all 0.3s;
+  transform-origin: 50% 50%;
 }
 
 a:hover svg{
   opacity: 1;
+  transform: scale(1.05);
 }
 
+
+/* Bitbucket Icon */
 .cls-4{fill:url(#New_Gradient_Swatch_1);}
