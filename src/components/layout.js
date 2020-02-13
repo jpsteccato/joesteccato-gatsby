@@ -57,8 +57,8 @@ const Layout = ({ children }) => {
          }}
       >
         <div style={{width: `300px`, fill: `#2FDE04FF`,display: `flex`,flexDirection: `row`, justifyContent: `space-around`, margin: `0 auto`}}>
-          <BitBucket />
           <Github />
+          <BitBucket />
           <LinkedIn />
           <Email />
         </div>

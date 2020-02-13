@@ -1,7 +1,7 @@
 import React from 'react';
 
 const BitBucket = () => (
-	<a style={{width: `2rem`, height: `auto`}} href="https://bitbucket.org/%7B3c8f2cee-0149-4ad6-a721-544332167b1a%7D/">
+	<a style={{width: `2.2rem`, height: `auto`}} href="https://bitbucket.org/%7B3c8f2cee-0149-4ad6-a721-544332167b1a%7D/">
 		<svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 0 70 70">
 			<defs>
 				<style></style>
@@ -9,7 +9,7 @@ const BitBucket = () => (
 					<stop offset="0.18" stop-color="#000000"/><stop offset="1" stop-color="#2FDE04"/>
 				</linearGradient>
 			</defs>
-			<title>Joe Steccato's BitBucket</title>
+			<title>Joe Steccato on BitBucket</title>
 			<g id="Layer_2" data-name="Layer 2">
 				<g id="Blue">
 					<polygon fill="#000" class="cls-2" points="24.7 43.51 37.75 43.51 40.9 25.12 21.23 25.12 24.7 43.51"/>
