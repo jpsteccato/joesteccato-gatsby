@@ -12,7 +12,6 @@ export default function sketch(p) {
 
 	// p.canvasWidth = ;
 	// p.canvasHeight = ;
-
 	p.numSprites = 0;
 
 	p.pressed = false;
@@ -30,9 +29,21 @@ export default function sketch(p) {
 	//   p.pressed = false
 	// }
 
+	p.touchMoved = (event) => {
+		event.preventDefault();
+	}
+
 	for (let i = 0; i < p.segNum; i++) {
 	  p.x[i] = p.mouseX;
 	  p.y[i] = p.mouseY;
+	}
+
+	p.setDimensions = () => {
+		p.thisHeight = (p.windowHeight * 0.45)
+		p.thisWidth = (p.windowWidth * 0.75)
+		if(p.thisWidth > 800){
+			p.thisWidth = 800
+		}
 	}
 
 	p.getRandomInt = (max) => {
@@ -48,12 +59,14 @@ export default function sketch(p) {
 	}
 
 	p.windowResized = () => {
-	  p.resizeCanvas(720,400);
+		p.setDimensions();
+	  p.resizeCanvas(p.thisWidth,p.thisHeight);
 	  p.background(0);
 	};
 
 	p.setup = () => {
-	  p.createCanvas(720,400);
+		p.setDimensions();
+	  p.createCanvas(p.thisWidth,p.thisHeight);
 	  p.background(0);
 	};
 

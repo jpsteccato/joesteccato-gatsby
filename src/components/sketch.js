@@ -8,8 +8,8 @@ const SketchWrapper = styled.div`
     margin: 0 auto;
     z-index: -2;
     border: 1px #fff solid;
-    width: 50%;
-    height: 50%;
+    width: ${props => props.width};
+    height: ${props => props.height};
   }
 `;
 
@@ -22,6 +22,7 @@ class Sketch extends Component {
 
   componentDidMount() {
     this.canvas = new p5(this.props.sketch, this.sketchRef.current); //eslint-disable-line
+
   }
 
   componentDidUpdate() {
@@ -34,7 +35,7 @@ class Sketch extends Component {
   }
 
   render() {
-    return <SketchWrapper ref={this.sketchRef} />;
+    return <SketchWrapper ref={this.sketchRef} width={"100%"} height={"100%"} />;
   }
 }
 

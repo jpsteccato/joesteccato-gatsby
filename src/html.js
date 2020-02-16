@@ -7,10 +7,15 @@ export default function HTML(props) {
       <head>
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
+        <meta 
+          name="viewport" 
+          content="user-scalable=no, 
+           initial-scale=1, 
+           maximum-scale=1, 
+           minimum-scale=1, 
+           width=device-width, 
+           initial-scale=1, 
+           shrink-to-fit=no" />
         <script
             src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { useMediaQuery } from 'react-responsive'
 
 import Header from "./header"
 import "./layout.css"
@@ -28,6 +29,9 @@ const Layout = ({ children }) => {
     }
   `)
 
+  const isMobileOrTablet = useMediaQuery({ query: '(max-width: 767px)' });
+  const svgSize = isMobileOrTablet ? `1.6rem` : `2rem`;
+
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
@@ -37,15 +41,16 @@ const Layout = ({ children }) => {
           maxWidth: 960,
           padding: `0px 1.0875rem 1.45rem`,
           paddingTop: 0,
-          height: `100%`,
+          height: `auto`,
           display: `flex`,
           justifyContent: `space-around`,
-          flexDirection: `column`
+          flexDirection: `column`,
+          width: `100%`
         }}
       >
-
-      <main>{children}</main>
+        <main>{children}</main>
       </div>
+
       <footer  
         style={{
           position: `absolute`,
@@ -53,17 +58,25 @@ const Layout = ({ children }) => {
           height: `4.5rem`,
           textAlign: `center`,
           width: `100%`,
-          fontSize: `0.6rem`
+          fontSize: `0.6rem`,
+          marginBottom: `${isMobileOrTablet ? `0rem` :  `1.0rem`}`
          }}
       >
-        <div style={{width: `300px`, fill: `#2FDE04FF`,display: `flex`,flexDirection: `row`, justifyContent: `space-around`, margin: `0 auto`}}>
-          <Github />
-          <BitBucket />
-          <LinkedIn />
-          <Email />
+        <div 
+          style={{
+            width: `${isMobileOrTablet ? `200px` :  `300px`}`, 
+            fill: `#2FDE04FF`,
+            display: `flex`,
+            flexDirection: `row`, 
+            justifyContent: `space-around`, 
+            margin: `0 auto`
+          }}>
+          <Email width={svgSize}/>
+          <Github width={svgSize}/>
+          <BitBucket width={svgSize}/>
+          <LinkedIn width={svgSize}/>
         </div>
       <div style={{opacity: `0.7`}}>© {new Date().getFullYear()} Joe Steccato</div>
-      
       </footer>
     </>
   )
