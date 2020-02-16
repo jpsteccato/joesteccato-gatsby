@@ -649,3 +649,25 @@ a:hover svg{
 
 /* Bitbucket Icon */
 .cls-4{fill:url(#New_Gradient_Swatch_1);}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #2FDE04FF;
+    opacity: 1;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  opacity: 0.6;
+}
+
+
+/*.owl-theme .owl-dots .owl-dot.active span{
+  opacity: 0.6;
+  transition: all 0.3s;
+  transform-origin: 50% 50%;
+  background: #2FDE04FF;
+}
+
+.owl-theme .owl-dots .owl-dot:hover span{
+  opacity: 1;
+  transform: scale(1.05);
+}*/

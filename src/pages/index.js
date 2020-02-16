@@ -1,6 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
@@ -10,11 +14,37 @@ import sketch from '../scripts/pen';
 
 const DrawBox = () => {
   return (
-        <div  style={{ width: `100%`, height: `500px`}}>
+        <div  style={{ width: `100%`, height: `400px`}}>
           <Sketch sketch={sketch}/>
           <div style={{textAlign: `center`}}>[Click and Drag Inside ^]</div>
         </div>
     )
+}
+
+const CarouselBox = () => {
+  return (
+    <OwlCarousel
+        className="owl-theme"
+        items={1}
+        dots={true}
+        nav={false}
+        mouseDrag={false}
+        touchDrag={false}
+      >
+        <DrawBox/>
+
+        <div style={{marginTop: `3.0rem`}}>
+          <h2 style={{display: `none`, textAlign: `center`}}>About Joe</h2>
+          <div style={{ width: `90%`, margin: `auto auto`, height: 400, verticalAlign: `middle`}}>
+            <div style={{ margin: `auto`, verticalAlign: `middle`}}>
+              Joe Steccato is a software engineer, creative coder, and musician based in New York.  
+            </div>
+          </div>
+        </div>
+
+
+    </OwlCarousel>
+  )
 }
 
 const IndexPage = () => (
@@ -23,19 +53,8 @@ const IndexPage = () => (
     <SEO title="Home" />
     <h1 style={{display:`none`}}>Home</h1>
     <div style={{ width: `90%`, margin: `auto auto`, verticalAlign: `middle`}}>
-
-      <DrawBox/>  
-      <div style={{display: `none`, marginTop: `3.0rem`}}>
-         <h2 style={{textAlign: `center`}}>About Joe</h2>
-         <div style={{ width: `90%`, margin: `auto auto`, height: 500, verticalAlign: `middle`}}>
-           <div 
-             style={{ 
-               margin: `auto`, 
-               verticalAlign: `middle`}}>
-                    Joe Steccato is a software engineer, creative coder, and musician based in New York.  
-             </div>
-         </div>
-        </div>
+      <CarouselBox />
+      
     </div>
   </Layout>
 )

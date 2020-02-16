@@ -10,6 +10,9 @@ export default function sketch(p) {
 	p.segNum = 50;
 	p.segLength = 10;
 
+	// p.canvasWidth = ;
+	// p.canvasHeight = ;
+
 	p.numSprites = 0;
 
 	p.pressed = false;
@@ -45,12 +48,12 @@ export default function sketch(p) {
 	}
 
 	p.windowResized = () => {
-	  p.resizeCanvas(720,420);
+	  p.resizeCanvas(720,400);
 	  p.background(0);
 	};
 
 	p.setup = () => {
-	  p.createCanvas(720,420);
+	  p.createCanvas(720,400);
 	  p.background(0);
 	};
 

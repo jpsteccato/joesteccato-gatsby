@@ -8,8 +8,8 @@ const SketchWrapper = styled.div`
     margin: 0 auto;
     z-index: -2;
     border: 1px #fff solid;
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
   }
 `;
 
