@@ -21,29 +21,17 @@ const DrawBox = () => {
     )
 }
 
-const CarouselBox = () => {
+const AboutBox = () => {
   return (
-    <OwlCarousel
-        className="owl-theme"
-        items={1}
-        dots={true}
-        nav={false}
-        mouseDrag={false}
-        touchDrag={false}
-      >
-        <DrawBox/>
-
-        <div style={{marginTop: `3.0rem`}}>
-          <h2 style={{display: `none`, textAlign: `center`}}>About Joe</h2>
-          <div style={{ width: `90%`, margin: `auto auto`, height: 400, verticalAlign: `middle`}}>
-            <div style={{ margin: `auto`, verticalAlign: `middle`}}>
-              Joe Steccato is a software engineer, creative coder, and musician based in New York.  
-            </div>
-          </div>
-        </div>
-
-
-    </OwlCarousel>
+    
+       <div style={{marginTop: `3.0rem`}}>
+         <h2 style={{display: `none`, textAlign: `center`}}>About Joe</h2>
+         <div style={{ width: `90%`, margin: `auto auto`, height: 400, verticalAlign: `middle`}}>
+           <div style={{ margin: `auto`, verticalAlign: `middle`}}>
+             Joe Steccato is a software engineer, creative coder, and musician based in New York.  
+           </div>
+         </div>
+       </div>
   )
 }
 
@@ -53,7 +41,17 @@ const IndexPage = () => (
     <SEO title="Home" />
     <h1 style={{display:`none`}}>Home</h1>
     <div style={{ width: `90%`, margin: `auto auto`, verticalAlign: `middle`}}>
-      <CarouselBox />
+      <OwlCarousel
+          className="owl-theme"
+          items={1}
+          dots={true}
+          nav={false}
+          mouseDrag={false}
+          touchDrag={false}
+        >
+        <DrawBox/>
+        <AboutBox/>
+      </OwlCarousel>
       
     </div>
   </Layout>
