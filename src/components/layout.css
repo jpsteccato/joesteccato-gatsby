@@ -651,7 +651,7 @@ a:hover svg{
 .cls-4{fill:url(#New_Gradient_Swatch_1);}
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-    background: #2FDE04FF;
+    background: #2FDE04FF !important;
     opacity: 1;
 }
 
