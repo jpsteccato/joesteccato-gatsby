@@ -646,28 +646,20 @@ a:hover svg{
   transform: scale(1.05);
 }
 
-
 /* Bitbucket Icon */
 .cls-4{fill:url(#New_Gradient_Swatch_1);}
 
+/* Owl Carousel */
+.owl-theme .owl-dots button{}
+
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-    background: #2FDE04FF !important;
-    opacity: 1;
+  background: #2FDE04FF !important;
 }
 
-.owl-theme .owl-dots .owl-dot span {
-  opacity: 0.6;
-}
-
-
-/*.owl-theme .owl-dots .owl-dot.active span{
-  opacity: 0.6;
-  transition: all 0.3s;
-  transform-origin: 50% 50%;
-  background: #2FDE04FF;
-}
-
-.owl-theme .owl-dots .owl-dot:hover span{
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot.active:hover span {
   opacity: 1;
-  transform: scale(1.05);
-}*/
+}
+
+.owl-theme .owl-dots .owl-dot:hover span, .owl-theme .owl-dots .owl-dot span {
+  opacity: 0.6;
+}
