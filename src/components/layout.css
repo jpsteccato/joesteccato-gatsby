@@ -3,9 +3,19 @@
   font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: normal;
-  
-/*  src: url("../fonts/Amity Jack.ttf") format("truetype");
-*/}
+}
+
+/*@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}*/
 
 html {
   font-family: 'Rubik', sans-serif !important;

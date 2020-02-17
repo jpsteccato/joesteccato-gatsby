@@ -13,9 +13,7 @@ export default function sketch(p) {
 	p.pressed = false;
 
 	p.mouseClicked = (event) => {
-		if(event.target.id === "p5-pen-clear"){
-			p.clear()
-		}
+		if(event.target.id === "p5-pen-clear") p.clear()
 	}
 
 	p.mousePressed = (event) => {
@@ -28,6 +26,14 @@ export default function sketch(p) {
 
 	p.touchMoved = (event) => {
 		event.preventDefault();
+	}
+
+	p.touchStarted = (event) => {
+		if(event.target.className === "p5Canvas") p.pressed = true
+	}
+
+	p.touchEnded = (event) => {
+		p.pressed = false
 	}
 
 	for (let i = 0; i < p.segNum; i++) {

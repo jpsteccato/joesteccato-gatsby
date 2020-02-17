@@ -24,7 +24,7 @@ const DrawBox = () => {
               opacity: `0.7`, 
               marginBottom: `2rem`
             }}>
-            [Click and Drag Inside ^] <div id="p5-pen-clear" 
+            [Click inside and drag] <div id="p5-pen-clear" 
           style={{
             display: `inline`,
             fontSize: `0.6rem`, 
@@ -48,17 +48,22 @@ const AboutBox = () => {
          <h2 style={{
             textAlign: `center`, 
             marginBottom: `1.0rem`,
-            display: isMobileOrTablet ? `none` : `block`
+            display: `none`
+            // display: isMobileOrTablet ? `none` : `block`
           }}>About Joe</h2>
-         <div style={{ width: `90%`, margin: `auto auto`, verticalAlign: `middle`}}>
-           <p style={{ margin: `auto auto 1.0rem auto`, verticalAlign: `middle`, fontSize: `0.8rem`}}>
+         <div style={{ 
+           width: `85%`, 
+           margin: `auto auto`, 
+           verticalAlign: `middle`
+         }}>
+           <p style={{ margin: `auto auto 0.8rem auto`, verticalAlign: `middle`, fontSize: `0.9rem`, textAlign: `center`}}>
              Joe Steccato is a software engineer, creative coder, and composing musician based in New York.
              He bridges his talents for art and technology to create and enhance digital interactions 
              of all kinds. 
            </p>
-           <p style={{ margin: `auto auto 1.0rem auto`, verticalAlign: `middle`, fontSize: `0.8rem`}}>
-             Joe has collaborated with artists, businesses, and individuals to offer engineering guidance
-             in a wide range of digital systems--from business operations and management, to interactive art installations.
+           <p style={{ margin: `auto auto 0.8rem auto`, verticalAlign: `middle`, fontSize: `0.9rem`, textAlign: `center`}}>
+             Joe has collaborated with artists, businesses, and individuals to offer engineering
+             for a wide range of digital systems and services--from business operations and management, to interactive art installations.
            </p>
          </div>
        </div>
