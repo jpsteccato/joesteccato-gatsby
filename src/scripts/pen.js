@@ -10,24 +10,21 @@ export default function sketch(p) {
 	p.segNum = 50;
 	p.segLength = 10;
 
-	// p.canvasWidth = ;
-	// p.canvasHeight = ;
-	p.numSprites = 0;
-
 	p.pressed = false;
 
-	// p.mouseClicked = () => {
-	//   p.pressed = !p.pressed
-	//   if(p.pressed) p.background(0);
-	// }
+	p.mouseClicked = (event) => {
+		if(event.target.id === "p5-pen-clear"){
+			p.clear()
+		}
+	}
 
-	// p.mousePressed = () => {
-	//   p.pressed = true
-	// }
+	p.mousePressed = (event) => {
+		if(event.target.className === "p5Canvas") p.pressed = true
+	}
 
-	// p.mouseReleased = () => {
-	//   p.pressed = false
-	// }
+	p.mouseReleased = () => {
+	  	p.pressed = false
+	}
 
 	p.touchMoved = (event) => {
 		event.preventDefault();
@@ -99,7 +96,7 @@ export default function sketch(p) {
 
 	  // }
 
-	  if(p.mouseIsPressed){
+	  if(p.pressed){
 	    p.dragSegment(0, p.mouseX, p.mouseY);
 	    for (let i = 0; i < p.x.length - 1; i++) {
 	      p.dragSegment(i + 1, p.x[i], p.y[i]);

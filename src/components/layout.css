@@ -660,6 +660,11 @@ a:hover svg{
 
 /* Owl Carousel */
 @media only screen and (min-width: 767px){
+  #p5-pen-clear:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
   a:hover svg{
     opacity: 1;
     transform: scale(1.05);

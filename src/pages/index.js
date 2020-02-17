@@ -17,7 +17,25 @@ const DrawBox = () => {
   return (
         <div id="p5-pen-sketch" style={{ width: `100%`}}>
           <Sketch sketch={sketch}/>
-          <div style={{textAlign: `center`, fontSize: `0.75rem`, opacity: `0.7`, marginBottom: `2rem`}}>[Click and Drag Inside ^]</div>
+          <div 
+            style={{
+              textAlign: `center`, 
+              fontSize: `0.75rem`, 
+              opacity: `0.7`, 
+              marginBottom: `2rem`
+            }}>
+            [Click and Drag Inside ^] <div id="p5-pen-clear" 
+          style={{
+            display: `inline`,
+            fontSize: `0.6rem`, 
+            border: `solid 1px #2FDE04FF`,
+            padding: `2px 3px`,
+            width: `50px`
+
+          }}>CLEAR</div>
+
+          </div>
+          
         </div>
     )
 }
