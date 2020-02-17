@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Joe Steccato | Software Engineer | Creative Coder | Musician | NYC`,
-    description: `Joe Steccato is a software engineer, creative coder, and musician based in New York.  Joe helps artist realize their engineering requirements and possibilites in media-based works.`,
+    title: `Joe Steccato | Software Engineer | Creative Coder | Musician | New York City`,
+    description: `Joe Steccato is a software engineer, creative coder, and composing musician based in New York. 
+      He bridges his talents for art and technology to create and enhance digital interactions of all kinds.`,
     author: `Joe Steccato`,
   },
   plugins: [
@@ -24,7 +25,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/profile.jpg`, // This path is relative to the root of the site.
+        icon: `src/images/js-blue-favicon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
