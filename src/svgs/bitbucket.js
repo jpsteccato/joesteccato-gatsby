@@ -4,9 +4,10 @@ const BitBucket = (props) => (
 	<a href="https://bitbucket.org/%7B3c8f2cee-0149-4ad6-a721-544332167b1a%7D/"
 		style={{
 			width: props.width, 
-			height: `auto`
+			height: `auto`,
+			marginTop: `-2px`
 		}}>
-		<svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 0 70 70">
+		<svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 0 62 62" margin-top="-1px">
 			<defs>
 				<style></style>
 				<linearGradient id="New_Gradient_Swatch_1" x1="64.01" y1="30.27" x2="32.99" y2="54.48" gradientUnits="userSpaceOnUse">
