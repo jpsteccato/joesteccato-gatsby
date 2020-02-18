@@ -24,16 +24,25 @@ const DrawBox = () => {
               opacity: `0.7`, 
               marginBottom: `2rem`
             }}>
-            [Click inside and drag] <div id="p5-pen-clear" 
-          style={{
-            display: `inline`,
-            fontSize: `0.6rem`, 
-            border: `solid 1px #2FDE04FF`,
-            padding: `2px 3px`,
-            width: `50px`
-
-          }}>CLEAR</div>
-
+            [Click inside and drag] 
+            <div id="p5-pen-save" 
+              style={{
+                display: `inline`,
+                fontSize: `0.6rem`, 
+                border: `solid 1px #2FDE04FF`,
+                padding: `2px 3px`,
+                width: `50px`,
+                marginLeft: `4px`
+              }}>SAVE</div>
+            <div id="p5-pen-clear" 
+              style={{
+                display: `inline`,
+                fontSize: `0.6rem`, 
+                border: `solid 1px #2FDE04FF`,
+                padding: `2px 3px`,
+                width: `50px`,
+                marginLeft: `4px`
+              }}>CLEAR</div>
           </div>
           
         </div>

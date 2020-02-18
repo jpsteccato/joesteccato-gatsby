@@ -14,6 +14,7 @@ export default function sketch(p) {
 
 	p.mouseClicked = (event) => {
 		if(event.target.id === "p5-pen-clear") p.clear()
+		if(event.target.id === "p5-pen-save") p.saveCanvas('painting','png')
 	}
 
 	p.mousePressed = (event) => {
