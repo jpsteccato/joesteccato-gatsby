@@ -72,7 +72,7 @@ const AboutBox = () => {
            </p>
            <p style={{ margin: `auto auto 0.8rem auto`, verticalAlign: `middle`, fontSize: `0.9rem`, textAlign: `center`}}>
              Joe has collaborated with artists, businesses, and individuals to offer engineering
-             for a wide range of digital systems and services--from business operations and management, to interactive art installations.
+             for a wide range of digital systems and services&mdash;from business operations and management, to interactive art installations.
            </p>
          </div>
        </div>
@@ -93,7 +93,6 @@ const IndexPage = () => (
           mouseDrag={false}
           touchDrag={false}
           dotsSpeed={700}
-
         >
         <DrawBox/>
         <AboutBox/>
