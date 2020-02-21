@@ -5,13 +5,28 @@
  */
 
 // You can delete this file if you're not using it
-exports.onCreateWebpackConfig = ({
-  actions,
-}) => {
+exports.onCreateWebpackConfig = ({ 
+    stage,
+    rules,
+    loaders,
+    plugins,
+    actions, 
+  }) => {
+
   const { setWebpackConfig } = actions;
-  setWebpackConfig({
-    externals: {
-      jquery: 'jQuery', // important: 'Q' capitalized
-    }
-  })
+  if (stage === "build-html" || stage === 'develop-html') {
+    setWebpackConfig({
+      module: {
+        rules: [
+          {
+            test: /p5/,
+            use: 'null-loader'
+          },
+        ],
+      },
+      externals: {
+        jquery: 'jQuery', // important: 'Q' capitalized
+      }
+    })
+  }
 }

@@ -1,7 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
+
+import Loadable from '@loadable/component';
 import { useMediaQuery } from 'react-responsive'
-import OwlCarousel from 'react-owl-carousel';
+// import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 
@@ -12,6 +14,7 @@ import SEO from "../components/seo"
 import Sketch from '../components/sketch';
 import sketch from '../scripts/pen';
 
+const OwlCarousel = Loadable(() => import('react-owl-carousel'));
 
 const DrawBox = () => {
   return (

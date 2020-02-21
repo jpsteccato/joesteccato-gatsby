@@ -7,6 +7,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.27",
     "@emotion/styled": "^10.0.27",
+    "@loadable/component": "^5.12.0",
     "babel-plugin-inline-react-svg": "^1.1.1",
     "gatsby": "^2.17.11",
     "gatsby-image": "^2.2.31",
