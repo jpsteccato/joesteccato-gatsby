@@ -4,6 +4,7 @@ module.exports = {
     description: `Joe Steccato is a software engineer, creative coder, and composing musician based in New York. 
       He bridges his talents for art and technology to create and enhance digital interactions of all kinds.`,
     author: `Joe Steccato`,
+    siteUrl: `https://joesteccato.com`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -28,6 +29,7 @@ module.exports = {
         icon: `src/images/js-blue-favicon.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-sitemap`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
