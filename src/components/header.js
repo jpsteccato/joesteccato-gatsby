@@ -1,12 +1,18 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import { useMediaQuery } from 'react-responsive'
 
-const Header = ({ siteTitle }) => (
+
+const Header = ({ siteTitle }) => {
+  const isMobileOrTablet = useMediaQuery({ query: '(max-width: 767px)' });
+  const topMargin = isMobileOrTablet ? `1.45rem` : `0.45rem`;
+
+  return (
   <header
     style={{
       background: `#000`,
-      marginTop: `1.45rem`,
+      marginTop: topMargin,
       marginBottom: `1.45rem`,
     }}
   >
@@ -41,7 +47,7 @@ const Header = ({ siteTitle }) => (
     </div>
 
   </header>
-)
+)}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

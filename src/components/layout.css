@@ -713,3 +713,17 @@ a:hover svg{
 .owl-theme .owl-dots, .owl-theme .owl-nav.disabled + .owl-dots{
   margin-top: 0rem !important;
 }
+
+.owl-nav button span{
+  font-size: 2.2rem !important;
+}
+
+.owl-theme .owl-nav [class*='owl-']{
+    margin: 5px 14px;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+    background: #2fde04ff!important;
+    color: #000!important;
+    text-decoration: none;
+}

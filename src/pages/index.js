@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 
 import Loadable from '@loadable/component';
 import { useMediaQuery } from 'react-responsive'
@@ -8,7 +8,7 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+// import Image from "../components/image"
 import SEO from "../components/seo"
 
 import Sketch from '../components/sketch';
@@ -54,9 +54,10 @@ const DrawBox = () => {
 
 const AboutBox = () => {
   const isMobileOrTablet = useMediaQuery({ query: '(max-width: 767px)' });
+  const heightSmall = useMediaQuery({ query: '(max-height: 580px)'})
 
-  return (
-       <div height="100%" style={{marginTop: isMobileOrTablet ? `0.0rem` : `3.0rem`, height: `100%`}}>
+  return(
+       <div style={{marginTop: isMobileOrTablet ? `2.0rem` : `3.0rem`}}>
          <h2 style={{
             textAlign: `center`, 
             marginBottom: `1.0rem`,
@@ -66,21 +67,22 @@ const AboutBox = () => {
          <div style={{ 
            width: `85%`, 
            margin: `auto auto`, 
-           verticalAlign: `middle`
+           verticalAlign: `middle`,
+           fontSize: heightSmall ? `0.7rem` : `0.9rem`
          }}>
-           <p style={{ margin: `auto auto 0.8rem auto`, verticalAlign: `middle`, fontSize: `0.9rem`, textAlign: `center`}}>
+           <p style={{ margin: `auto auto 0.8rem auto`, verticalAlign: `middle`, textAlign: `center`}}>
              Joe Steccato is a software engineer, creative coder, and composing musician based in New York.
              He bridges his talents for art and technology to create and enhance digital interactions 
              of all kinds. 
            </p>
-           <p style={{ margin: `auto auto 0.8rem auto`, verticalAlign: `middle`, fontSize: `0.9rem`, textAlign: `center`}}>
+           <p style={{ margin: `auto auto 0.8rem auto`, verticalAlign: `middle`, textAlign: `center`}}>
              Joe has collaborated with artists, businesses, and individuals to offer engineering
              for a wide range of digital systems and services&mdash;from business operations and management, to interactive art installations.
            </p>
          </div>
        </div>
   )
-}
+}  
 
 const IndexPage = () => (
 
@@ -96,6 +98,7 @@ const IndexPage = () => (
           mouseDrag={false}
           touchDrag={false}
           dotsSpeed={700}
+          autoHeightClass={null}
         >
         <DrawBox/>
         <AboutBox/>

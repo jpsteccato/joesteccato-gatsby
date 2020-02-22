@@ -20,17 +20,16 @@ class Sketch extends Component {
     this.canvas = null;
   }
 
-  componentDidMount() {
+  componentDidMount() { //eslint-disable-line
     this.canvas = new p5(this.props.sketch, this.sketchRef.current); //eslint-disable-line
-
   }
 
-  componentDidUpdate() {
+  componentDidUpdate() { //eslint-disable-line
     this.canvas.remove();
     this.canvas = new p5(this.props.sketch, this.sketchRef.current); //eslint-disable-line
   }
 
-  componentWillUnmount() {
+  componentWillUnmount() { //eslint-disable-line
     this.canvas.remove();
   }
 
