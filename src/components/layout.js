@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
   `)
 
   const isMobileOrTablet = useMediaQuery({ query: '(max-width: 767px)' });
-  const svgSize = isMobileOrTablet ? `1.6rem` : `2rem`;
+  const svgSize = isMobileOrTablet ? `1.5rem` : `2rem`;
 
   return (
     <>
@@ -55,7 +55,7 @@ const Layout = ({ children }) => {
         style={{
           position: `absolute`,
           bottom: `0`,
-          height: `4.5rem`,
+          height: `3.8rem`,
           textAlign: `center`,
           width: `100%`,
           fontSize: `0.6rem`,
@@ -76,7 +76,7 @@ const Layout = ({ children }) => {
           <BitBucket width={svgSize}/>
           <LinkedIn width={svgSize}/>
         </div>
-      <div style={{opacity: `0.7`}}>© {new Date().getFullYear()} Joe Steccato</div>
+      <div style={{opacity: `0.7`, display: `none`}}>© {new Date().getFullYear()} Joe Steccato</div>
       </footer>
     </>
   )

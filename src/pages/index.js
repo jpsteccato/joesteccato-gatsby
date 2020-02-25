@@ -57,19 +57,30 @@ const AboutBox = () => {
   const heightSmall = useMediaQuery({ query: '(max-height: 580px)'})
 
   return(
-       <div style={{marginTop: isMobileOrTablet ? `2.0rem` : `3.0rem`}}>
-         <h2 style={{
-            textAlign: `center`, 
-            marginBottom: `1.0rem`,
-            display: `none`
-            // display: isMobileOrTablet ? `none` : `block`
-          }}>About Joe</h2>
+       <div style={{
+         marginTop: isMobileOrTablet ? `0.8rem` : `3.0rem`,
+         height: `100%`
+       }}>
+
          <div style={{ 
            width: `85%`, 
+           height: '100%',
            margin: `auto auto`, 
            verticalAlign: `middle`,
-           fontSize: heightSmall ? `0.7rem` : `0.9rem`
+           fontSize: heightSmall ? `0.7rem` : `0.9rem`,
+           flexGrow: 1,
+           display: `flex`,
+           flexDirection: `column`,
+           justifyContent: `center`,
+           minHeight: `250px`
+
          }}>
+           <h2 style={{
+              textAlign: `center`, 
+              marginBottom: `1.0rem`,
+              display: `none`,
+              display: isMobileOrTablet ? `none` : `block`
+            }}>About Joe</h2>
            <p style={{ margin: `auto auto 0.8rem auto`, verticalAlign: `middle`, textAlign: `center`}}>
              Joe Steccato is a software engineer, creative coder, and composing musician based in New York.
              He bridges his talents for art and technology to create and enhance digital interactions 
@@ -91,17 +102,23 @@ const IndexPage = () => (
     <h1 style={{display:`none`}}>Home</h1>
     <div style={{ width: `100%`, margin: `auto auto`, verticalAlign: `middle`}}>
       <OwlCarousel
-          className="owl-theme"
+          className={"owl-theme"}
           items={1}
           dots={true}
           nav={false}
           mouseDrag={false}
           touchDrag={false}
           dotsSpeed={700}
-          autoHeightClass={null}
-        >
-        <DrawBox/>
-        <AboutBox/>
+          autoHeight={true}
+        > 
+
+          <div class="item">
+            <DrawBox/>
+          </div>
+          <div class="item" style={{height: `100%`}}>
+            <AboutBox/>
+          </div>
+
       </OwlCarousel>
       
     </div>
