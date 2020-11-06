@@ -1,7 +1,7 @@
 import React from 'react';
 
 const BitBucket = (props) => (
-	<a href="https://bitbucket.org/%7B3c8f2cee-0149-4ad6-a721-544332167b1a%7D/"
+	<a href="https://bitbucket.org/jsteccato/"
 		style={{
 			width: props.width, 
 			height: `auto`,
