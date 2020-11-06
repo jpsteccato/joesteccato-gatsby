@@ -14,8 +14,6 @@ import SEO from "../components/seo"
 import Sketch from '../components/sketch';
 import sketch from '../scripts/pen';
 
-const OwlCarousel = Loadable(() => import('react-owl-carousel'));
-
 const DrawBox = () => {
   return (
         <div id="p5-pen-sketch" style={{ width: `100%`}}>
@@ -75,25 +73,23 @@ const AboutBox = () => {
            minHeight: `250px`
 
          }}>
-           <h2 style={{
-              textAlign: `center`, 
-              marginBottom: `1.0rem`,
-              display: `none`,
-              display: isMobileOrTablet ? `none` : `block`
-            }}>About Joe</h2>
            <p style={{ margin: `auto auto 0.8rem auto`, verticalAlign: `middle`, textAlign: `center`}}>
              Joe Steccato is a software engineer, creative coder, and composing musician based in New York.
              He bridges his talents for art and technology to create and enhance digital interactions 
              of all kinds. 
            </p>
            <p style={{ margin: `auto auto 0.8rem auto`, verticalAlign: `middle`, textAlign: `center`}}>
-             Joe has collaborated with artists, businesses, and individuals to offer engineering
+             Joe collaborates with artists, businesses, and individuals to offer engineering
              for a wide range of digital systems and services&mdash;from business operations and management, to interactive art installations.
            </p>
          </div>
        </div>
   )
 }  
+
+const OwlCarousel = Loadable(() => import('react-owl-carousel'), {
+  fallback: <AboutBox />
+});
 
 const IndexPage = () => (
 
