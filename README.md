@@ -14,6 +14,6 @@
 2.  **Test Build.**
 
     ```sh
-    gatsby buildd
+    npm run deploy
     ```
 
